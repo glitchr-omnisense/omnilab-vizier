@@ -1,0 +1,46 @@
+{
+    "name": "omnilab/vizier",
+    "type": "library",
+    "description": "Omnilab VizieR: the CDS's library of published astronomical catalogues (Strasbourg) - its tables whose description holds a text, as datasets (id, catalogue, title, authors, rows), and the rows of a table around a point of the sky or an object, each column with its unit and description - through TAPVizieR in ADQL, no key needed.",
+    "keywords": [
+        "science",
+        "astronomy",
+        "vizier",
+        "cds",
+        "catalogues",
+        "tap",
+        "adql",
+        "omnilab"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marco Meyer",
+            "email": "marco.meyer@glitchr.io"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "glitchr/omnilab": "^1.0@dev",
+        "symfony/http-client": "^6.4|^7.0|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Omnilab\\Vizier\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Omnilab\\Vizier\\Tests\\": "Tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
