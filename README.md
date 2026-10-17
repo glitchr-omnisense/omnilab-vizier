@@ -1,7 +1,7 @@
 # omnilab/vizier
 
 VizieR, the CDS's library of published astronomical catalogues (Strasbourg), for
-[glitchr/omnilab](https://github.com/glitchr-studio/omnilab): its tables by text, as datasets -
+[omniscient/omnilab](https://github.com/glitchr-studio/omnilab): its tables by text, as datasets -
 each a `Product` whose id is the table's name (`I/239/hip_main`), with its catalogue, title,
 authors and number of rows -, and, outside the contract, the rows of a table around a point of
 the sky or an object, each column with its unit and description. Through TAPVizieR, in ADQL. No
