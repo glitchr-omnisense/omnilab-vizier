@@ -37,6 +37,17 @@ original description of the VizieR service was published in Ochsenbein et al. 20
 Each catalogue is its authors' work, to be cited from its own reference (its VizieR page gives
 it). No rate is published for TAP; each call here took 1 to 6 s.
 
+## Usage policy
+
+Declared as data in [`policy.json`](policy.json) (its pages could not be read on 2026-11-10 (https://cds.unistra.fr/vizier-org/licences_vizier.html): see the notes in the file), and honoured on every request by the
+core: a limit reached waits when its window ends within `max_wait` seconds, else the request is not
+sent ([Usage policies](https://github.com/glitchr-omnisense/omnilab/blob/1.x/docs/policies.md)).
+
+- Limits: not published (unknown).
+- Licence: not stated; commercial use: unknown.
+- Credit: not required: This research has made use of the VizieR catalogue access tool, CDS, Strasbourg Astronomical Observatory, France (DOI: 10.26093/cds/vizier) (https://vizier.cds.unistra.fr/).
+- Needs: nothing.
+
 ## Responsibility
 
 This package is an independent, unofficial client: it is not affiliated with, endorsed by or

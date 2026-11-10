@@ -1,0 +1,40 @@
+{
+    "$schema": "https://github.com/glitchr-omnisense/contracts/blob/1.x/resources/usage-policy.schema.json",
+    "provider": "vizier",
+    "rateLimits": null,
+    "concurrency": null,
+    "rights": {
+        "commercial": "unknown",
+        "openSourceRequired": null,
+        "caching": {
+            "permission": "unknown",
+            "maxTtl": null
+        },
+        "storage": "unknown",
+        "redistribution": "unknown",
+        "attribution": {
+            "required": false,
+            "text": "This research has made use of the VizieR catalogue access tool, CDS, Strasbourg Astronomical Observatory, France (DOI: 10.26093/cds/vizier)",
+            "url": "https://vizier.cds.unistra.fr/",
+            "where": [
+                "source"
+            ]
+        },
+        "licence": null
+    },
+    "requirements": {
+        "key": false,
+        "userAgent": {
+            "required": false,
+            "pattern": null
+        }
+    },
+    "provenance": {
+        "terms": "https://cds.unistra.fr/vizier-org/licences_vizier.html",
+        "policy": null,
+        "verifiedAt": null,
+        "declaredBy": "maintainer",
+        "contact": null,
+        "notes": "Every *.unistra.fr host refused or timed out on 2026-11-10, so no CDS page could be read directly; what is here comes from the search engine's excerpts of the VizieR \"Rules of usage\" page and the CDS legals that day. No query rate found for VizieR or its TAP service (the SIMBAD FAQ figure of 10 queries a second per IP is SIMBAD's). The rules describe free access essentially for scientific usage; commercial usage depends on each catalogue's origin (hence unknown); some catalogues add an \"Acknowledging\" section in their ReadMe. CDS legals ask datasets to be cited (DOI if any) with \"CDS/VizieR\". Rights unknown until the page is read."
+    }
+}
