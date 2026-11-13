@@ -28,6 +28,32 @@ omnilab:
 
 See [docs/](docs/index.md) for what is read, how it maps, and what VizieR does not give here.
 
+## Install and a first call
+
+```sh
+composer require omnilab/vizier
+```
+
+A real call, with no account and no key: the VizieR tables a text names. `mailto` is your address,
+sent in the User-Agent so that the service can reach you before it blocks a caller; the source keeps
+to the limits its [`policy.json`](policy.json) declares.
+
+```php
+<?php
+
+require __DIR__.'/vendor/autoload.php';
+
+use Omnilab\Source\Query;
+use Omnilab\Vizier\VizierSourceFactory;
+
+$vizier = (new VizierSourceFactory())->create(['mailto' => 'you@example.org']);   // your address, in the User-Agent
+foreach ($vizier->datasets(new Query('hipparcos', limit: 3)) as $table) {
+    echo $table->id, "\n";
+}
+```
+
+Not run on 2026-11-13: the CDS's services (SIMBAD, VizieR) answered their maintenance page (404) that day.
+
 ## Terms of use
 
 VizieR is a service of the CDS (Centre de Données astronomiques de Strasbourg, Université de
